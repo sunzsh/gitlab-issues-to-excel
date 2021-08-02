@@ -11,13 +11,13 @@
 ### 导出Excel
 > 直接导出到桌面
 ```
-java -jar gitlab-issues-to-excel.jar GitLab地址 TOKEN 项目ID
+java -jar gitlab-issues-to-excel.jar GitLab地址/api/v4 TOKEN 项目ID
 ```
 
 ### 导入Excel
 > 导入仅支持：标记、截止日期、工时、指派人（目前不支持标题修改）
 ```
-java -jar gitlab-issues-to-excel.jar GitLab地址 TOKEN 项目ID excel地址
+java -jar gitlab-issues-to-excel.jar GitLab地址/api/v4 TOKEN 项目ID excel地址
 ```
 
 ## 标签导出说明
