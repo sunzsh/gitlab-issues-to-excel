@@ -19,6 +19,8 @@ import com.zthzinfo.gitlabtools.utils.WorkDayUtil;
 import lombok.*;
 import org.apache.poi.ss.usermodel.Cell;
 
+import javax.crypto.Mac;
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.Key;
@@ -283,7 +285,7 @@ public class IssuesSerivce {
 			return;
 		}
 
-		String fileName = outputDir + "/issues_" + DateUtil.format(new Date(), "yyyyMMdd") + ".xlsx";
+		String fileName = outputDir + File.separator + "issues_" + DateUtil.format(new Date(), "yyyyMMdd") + ".xlsx";
 		ExcelWriter writer = ExcelUtil.getWriter(fileName);
 
 		int rowHeight = 30;

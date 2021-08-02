@@ -153,7 +153,7 @@ public class FeedsToExcel {
 		String output_dir = desktopDir.getAbsolutePath();
 
 		if (output_dir.length() > 7 && !output_dir.substring(output_dir.length() - 7).equalsIgnoreCase("desktop")) {
-			output_dir = output_dir + "/Desktop";
+			output_dir = output_dir + File.separator + "Desktop";
 		}
 
 		return output_dir;
